@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endangered Species in the Philippines</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #1d6e47;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 3em;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #3b9d70;
+        }
+
+        nav a {
+            color: #fff;
+            padding: 15px 25px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #2f8d64;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        .species-card {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .species-card div {
+            background-color: #2baf78;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            max-width: 320px;
+            text-align: center;
+        }
+
+        .species-card img {
+            width: 100%;
+            border-radius: 8px;
+            object-fit: cover;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .species-card img:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            background-color: #2e8b57;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+        }
+
+        footer p {
+            margin-top: 10px;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-top: 40px;
+        }
+
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        form button {
+            background-color: #2e8b57;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1.1em;
+        }
+
+        form button:hover {
+            background-color: #1d6e47;
+        }
+
+        .form-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Endangered Species in the Philippines</h1>
+        <p>Protecting the rich biodiversity of the Philippines | DATE : 2/20/2025</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#species">Endangered Species</a>
+        <a href="#feedback">Feedback</a>
+    </nav>
+
+    <div class="container">
+
+        <section id="about">
+            <h2>About Endangered Species in the Philippines</h2>
+            <p>The Philippines is home to an incredibly diverse range of flora and fauna. However, due to deforestation, habitat loss, and illegal hunting, many species in the country are now at risk of extinction. Efforts are being made by conservationists and environmental groups to protect and save these endangered species from disappearing forever.</p>
+        </section>
+
+        <section id="species">
+            <h2>Endangered Species in the Philippines</h2>
+            <div class="species-card">
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm30kek81fw3fm4P3RBFHWqwBUlHTLBDeXWQ&s" alt="tamaraw">
+                    <h3>Tamaraw</h3>
+                    <p><b>Native to Mindoro Island, the Tamaraw is one of the most critically endangered animals in the Philippines.</b></p>
+                </div>
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsTlhSGx7yTcrVQsgP4lA39gKW-w54nUZVPg&s" alt="Philippine Eagle">
+                    <h3>Philippine Eagle</h3>
+                    <p><b>Known as the national bird of the Philippines, the Philippine eagle is critically endangered due to deforestation and hunting.</b></p>
+                </div>
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRjMDN5-CQW98PzsuzaKR-_JZ2TIp26jc8Ew&s" alt="Whale Shark">
+                    <h3>Whale Shark</h3>
+                    <p><b>The whale shark is the largest living fish species, known for its gentle nature and distinctive pattern of spots and stripes. Found in tropical waters around the world, the whale shark is a migratory species and is particularly present in the Philippines, where they can be seen in places like Oslob, Cebu.</b></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feedback Form -->
+        <section id="feedback">
+            <h2>Leave Your Feedback</h2>
+            <div class="form-container">
+                <form action="#" method="POST">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                    <label for="contact">Contact Number:</label>
+                    <input type="text" id="contact" name="contact" placeholder="Your Contact Number" required>
+
+                    <label for="comments">Comments:</label>
+                    <textarea id="comments" name="comments" rows="5" placeholder="Your comments..." required></textarea>
+
+                    <button type="submit">Submit Feedback</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2/20/2025 Endangered Species in the Philippines | All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>
